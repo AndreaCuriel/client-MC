@@ -9,14 +9,15 @@
         <input type="text" id="mainStack" v-model="currentMissionCommander.mainStack">     
     </form>
     <section>
-        <div>Actualizar</div>
-        <div>Eliminar</div>
+        <button @click="deleteMC">Actializar</button>
+        <button @click="updateMC">Eliminar</button>
+        <p>{{message}}</p>
     </section>
     
 </div>
 <div v-else>
     <br />
-    <p> Selecciona un explorer. </p>
+    <p> Selecciona un Mission Commander. </p>
   </div>
     
 </template>
@@ -44,8 +45,34 @@ export default{
             .catch(e => {
             console.log(e);
         });
-
         },
+
+        updateMC(){
+            MissionCommanderService.update(this.currentMissionCommander.id, this.currentMissionCommander)
+            .then(response =>{
+                console.log(response.data)
+                this.message='Actualización exitosa'
+            })
+            .catch(e =>{
+                console.log(e)
+
+            })
+        },
+
+        deleteMC(){
+            MissionCommanderService.delete(this.currentMissionCommander.id)
+            .then(response =>{
+                console.log(response.data)
+                this.$router.push({name: "missionCommanders"})
+            })
+            .catch(e =>{
+                console.log(e)
+
+            })
+        }
+
+        
+
         
     },
      mounted() {
