@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Woopa!!</router-link> |
+    <router-link to="/missionCommanders">Mission Commanders</router-link>
+    <router-link to="/addMissionCommander">Agregar Mission Commander</router-link>
   </nav>
   <router-view/>
 </template>
