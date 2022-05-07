@@ -18,4 +18,4 @@ class MissionCommanderService {
   }
 }
 
-export default new ExplorerService();
+export default new MissionCommanderService();
