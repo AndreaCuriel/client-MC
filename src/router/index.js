@@ -12,6 +12,12 @@ const routes = [
     name: "addMisisonCommander",
     component: () => import("./../components/AddMissionCommander"),
   },
+
+  {
+    path: "/missionCommanders/:id",
+    name: "MissionCommander-details",
+    component: () => import("./../components/IdMissionCommander.vue"),
+  },
 ];
 
 const router = createRouter({
