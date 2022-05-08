@@ -1,12 +1,12 @@
 <template>
 <div v-if="currentMissionCommander">
     <form>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" v-model="currentMissionCommander.name">
-        <label for="username">Username</label>
-        <input type="text" id="Username" v-model="currentMissionCommander.username">
-        <label for="mainStack">MainStack</label>
-        <input type="text" id="mainStack" v-model="currentMissionCommander.mainStack">     
+        <br><label class="update_label" for="name">Nombre</label>
+        <input class="update_input" disabled type="text" id="name" v-model="currentMissionCommander.name">
+        <br><label class="update_label" for="username">Username</label>
+        <input class="update_input" disabled type="text" id="Username" v-model="currentMissionCommander.username">
+        <br><label class="update_label" for="mainStack">MainStack</label>
+        <input class="update_input" type="text" id="mainStack" v-model="currentMissionCommander.mainStack">     
     </form>
     <section>
         <button @click="updateMC">Actualizar</button>
@@ -82,3 +82,34 @@ export default{
    
 }
 </script>
+<style>
+.update_label{
+   display: inline-block;
+   font-weight: bold;
+    width: 80px;
+  
+}
+
+.update_input{
+    margin: 1%;
+    font-size: 15px;
+}
+
+button{
+    color: #df42d7;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    margin: 2% 3% 0 0;
+    
+}
+
+p{
+   
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+</style>

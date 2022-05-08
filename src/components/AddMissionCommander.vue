@@ -1,12 +1,12 @@
 <template>
-    <div v-if="!submitted">
+    <div id="form" v-if="!submitted">
         <form>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" v-model="newMissionCommander.name">
-        <label for="username">Username</label>
-        <input type="text" id="Username" v-model="newMissionCommander.username">
-        <label for="mainStack">MainStack</label>
-        <input type="text" id="mainStack" v-model="newMissionCommander.mainStack">     
+        <br><label class="create_label" for="name">Nombre</label>
+        <input class="create_input"  type="text" id="name" v-model="newMissionCommander.name">
+        <br><label class="create_label"  for="username">Username</label>
+        <input class="create_input" type="text" id="Username" v-model="newMissionCommander.username">
+        <br><label class="create_label"  for="mainStack">MainStack</label>
+        <input class="create_input" type="text" id="mainStack" v-model="newMissionCommander.mainStack">     
     </form>
     <div>
         <button @click="createMissionCommander">Agregar</button>
@@ -65,3 +65,31 @@ export default{
    
 }
 </script>
+<style>
+
+
+
+.create_label{
+   display: inline-block;
+   font-weight: bold;
+    width: 80px;
+  
+}
+
+.create_input{
+    margin: 1%;
+    font-size: 15px;
+}
+
+button{
+    color: #df42d7;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    margin-top: 2%;
+    
+}
+
+</style>

@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Woopa!!</router-link> |
+    <router-link to="/"><h2>Woopa!!</h2></router-link> 
     <router-link to="/missionCommanders">Mission Commanders</router-link>
     <router-link to="/addMissionCommander">Agregar Mission Commander</router-link>
   </nav>
@@ -23,9 +23,10 @@ nav {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin: 3%;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #df42d7;
 }
 </style>
