@@ -9,8 +9,8 @@
         <input type="text" id="mainStack" v-model="currentMissionCommander.mainStack">     
     </form>
     <section>
-        <button @click="deleteMC">Actializar</button>
-        <button @click="updateMC">Eliminar</button>
+        <button @click="updateMC">Actualizar</button>
+        <button @click="deleteMC">Eliminar</button>  
         <p>{{message}}</p>
     </section>
     
