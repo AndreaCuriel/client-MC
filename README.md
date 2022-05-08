@@ -82,7 +82,7 @@ Referencia: [AXIOS](https://axios-http.com/es/docs/intro#:~:text=Axios%20es%20un
 - Cada componente tiene la maquetación (lista y formularios) para la interracion con el cliente y los métodos que llamaran el resultado de las peticiones con la clase `MissionCommanderService`.
 
 ## Correr la aplicacion Cliente Servidor.
-1. Reaiza un fork y clona los repositorios del Cliente y del servidor e instala las dependencias necesarias con `npm intall`.
+1. Realiza un fork y clona los repositorios del Cliente y del servidor e instala las dependencias necesarias con `npm intall`.
 2. Verificar que los URLs del Servidor y del Cliente esten correctas en los siguientes archivos.
 - Servidor: En el archivo server.js en la línea 13, donde es la inicialización del CORS, la URL es: `"http://localhost:8080"` (Url donde corre el Cliente, puede variar la url, en su caso verificar cual es la correspondiente). [server.js](https://github.com/AndreaCuriel/API-Express-DB/blob/main/server.js)
 - Cliente: En el archivo `http-common.js` en la carpeta src, la cual contienela configuración de Axios. En la línea 3 verifica la url `localhost:3000` (ulr donde corre el Servidor). [Código](https://github.com/AndreaCuriel/client-MC/blob/master/src/http-common.js)
@@ -90,7 +90,9 @@ Referencia: [AXIOS](https://axios-http.com/es/docs/intro#:~:text=Axios%20es%20un
 4. Servidor: Corre la app con `node server.js`.
 5. Cliente: Corre la app con `npm run serve`.
 
+## Vista de la Aplicación
 
+![clienteWoopa](https://user-images.githubusercontent.com/99285898/167320969-0037bc7c-b384-4638-85f3-413e78b16834.png)
 
 
 
